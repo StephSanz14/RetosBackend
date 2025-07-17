@@ -37,7 +37,7 @@ const server = http.createServer((req, res) => {
 
 
 parseQuery(req, res, () => {
-      const { pathname, method, query } = req;
+      const { pathname, method, query } = req;  
 
       if (pathname === '/palindromo' && method === 'GET') {
         const palabra = query.palabra;
